@@ -28,7 +28,7 @@ const Page: React.FC = () => {
 
         {/* Title */}
         <div className={styles.title}>
-          <h1>Hi, I'm Betsy!</h1>
+          <h1>Hi, I&apos;m Betsy!</h1>
           <h2>What can I help you with?</h2>
         </div>
 
@@ -134,11 +134,11 @@ const Page: React.FC = () => {
         {/* Benefits */}
         <div className={styles.benefits}>
           <div className={styles.benefitsHeader}>
-            After a few questions, you'll unlock:
+            After a few questions, you&apos;ll unlock:
           </div>
           <div className={styles.benefitsList}>
             <div className={styles.benefit}>
-              <span>
+              <span className={styles.benefitIcon}>
                 <svg
                   style={{ fill: 'none', stroke: 'none' }}
                   height='22px'
@@ -189,9 +189,8 @@ const Page: React.FC = () => {
             </div>
           </div>
         </div>
-
-        
       </main>
+
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
@@ -246,3 +245,4 @@ const Page: React.FC = () => {
 }
 
 export default Page
+
