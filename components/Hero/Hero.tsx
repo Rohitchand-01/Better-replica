@@ -1,8 +1,19 @@
+'use client';
 import styles from '../Hero/Hero.module.scss'
 import Image from 'next/image'
 import React from 'react'
 
 const Hero: React.FC = () => {
+
+  const navigate = (url: string) => {
+    if (typeof window !== 'undefined') {
+      window.location.href = url;
+    }
+  }
+  const handleClick = () => {
+    navigate('/start');
+  }
+
   return (
     <div id="hero" className={styles.hero}>
       <div className={styles.hero_content}>
@@ -20,7 +31,7 @@ const Hero: React.FC = () => {
         </p>
       </div>
       <div className={styles.button_container}>
-        <button className={styles.cta_button}>
+        <button className={styles.cta_button} onClick={handleClick}>
           Start my pre-approval
         </button>
       </div>
