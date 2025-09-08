@@ -4,30 +4,26 @@ import styles from './Questions.module.scss';
 const Questions: React.FC = () => {
   return (
     <>
-      {/* Testimonial Section */}
       <section className={styles.testimonial}>
         <div className={styles.container}>
           <div className={styles.testimonialContent}>
-            {/* Left Side - Testimonial Card */}
             <div className={styles.testimonialCard}>
               <div className={styles.testimonialImage}>
                 <div className={styles.imagePlaceholder}>
-                  <span>Paul's Image</span>
+                  <span>Paul&apos;s Image</span>
                 </div>
               </div>
               <div className={styles.testimonialText}>
-                <div className={styles.quoteIcon}>"</div>
+                <div className={styles.quoteIcon}>&quot;</div>
                 <p className={styles.quote}>
                   I used Better three years ago for my primary residence and just now for my vacation home. Very simple process. Each time it took about two weeks to close.
                 </p>
                 <p className={styles.author}>Paul - Better Mortgage customer</p>
               </div>
             </div>
-
-            {/* Right Side - Title and CTA */}
             <div className={styles.testimonialRight}>
               <h2 className={styles.testimonialTitle}>
-                Find out why we're better.
+                Find out why we&apos;re better.
               </h2>
               <button className={styles.storiesButton}>
                 See all our stories
@@ -42,8 +38,6 @@ const Questions: React.FC = () => {
               </div>
             </div>
           </div>
-
-          {/* Navigation Buttons */}
           <div className={styles.testimonialNav}>
             <button className={`${styles.navButton} ${styles.active}`}>
               Paul
@@ -57,17 +51,14 @@ const Questions: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Questions Section */}
       <section className={styles.questions}>
         <div className={styles.container}>
-          {/* Header Section */}
           <div className={styles.header}>
             <div className={styles.headerContent}>
               <h2 className={styles.title}>
                 Got questions?
                 <br />
-                We've got answers
+                We&apos;ve got answers
               </h2>
             </div>
             <div className={styles.tabs}>
@@ -78,14 +69,11 @@ const Questions: React.FC = () => {
                 Calculators
               </button>
               <button className={styles.tab}>
-                Guides & FAQs
+                Guides &amp; FAQs
               </button>
             </div>
           </div>
-
-          {/* Cards Grid */}
           <div className={styles.grid}>
-            {/* AI Mortgage Card */}
             <div className={`${styles.card} ${styles.cardLarge}`}>
               <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>
@@ -98,14 +86,11 @@ const Questions: React.FC = () => {
                 </button>
               </div>
               <div className={styles.cardImage}>
-                {/* Image placeholder - replace with actual image */}
                 <div className={styles.imagePlaceholder}>
                   <span>AI Mortgage Image</span>
                 </div>
               </div>
             </div>
-
-            {/* One Day Mortgage Card */}
             <div className={`${styles.card} ${styles.cardLarge} ${styles.cardGreen}`}>
               <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>
@@ -131,11 +116,8 @@ const Questions: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            {/* Better HELOC Card */}
             <div className={`${styles.card} ${styles.cardMedium}`}>
               <div className={styles.cardImage}>
-                {/* Image placeholder - replace with actual image */}
                 <div className={styles.imagePlaceholder}>
                   <span>HELOC Couple Image</span>
                 </div>
@@ -152,8 +134,6 @@ const Questions: React.FC = () => {
                 </button>
               </div>
             </div>
-
-            {/* Insurance Card */}
             <div className={`${styles.card} ${styles.cardMedium}`}>
               <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>Insurance</h3>
@@ -164,7 +144,6 @@ const Questions: React.FC = () => {
                 </button>
               </div>
               <div className={styles.cardImage}>
-                {/* Image placeholder - replace with actual image */}
                 <div className={styles.imagePlaceholder}>
                   <span>Insurance Family Image</span>
                 </div>

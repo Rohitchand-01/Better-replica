@@ -1,17 +1,14 @@
 import styles from '../Hero/Hero.module.scss'
 import Image from 'next/image'
+import React from 'react'
 
-type Props = {}
-
-const Hero = (props: Props) => {
+const Hero: React.FC = () => {
   return (
     <div id="hero" className={styles.hero}>
       <div className={styles.hero_content}>
         <h1 className={styles.hero_text}>
-          The first
-          <br />
-          <span className={styles.gradient_text}>AI-powered </span>
-          Mortgage
+          The first <br />
+          <span className={styles.gradient_text}>AI-powered </span> Mortgage
         </h1>
       </div>
       <div className={styles.sub_content}>
@@ -19,8 +16,7 @@ const Hero = (props: Props) => {
           Our tech unlocks lower rates, higher chances of approval,
         </p>
         <p className={styles.sub_text}>
-          and a lightning‑fast process from approval to closing. Over $100
-          billion funded.
+          and a lightning-fast process from approval to closing. Over $100 billion funded.
         </p>
       </div>
       <div className={styles.button_container}>

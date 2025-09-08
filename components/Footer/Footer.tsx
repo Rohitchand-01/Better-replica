@@ -6,7 +6,6 @@ const Footer: React.FC = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.content}>
-          {/* Company Description */}
           <div className={styles.company}>
             <div className={styles.logo}>
               <span className={styles.betterText}>Better</span>
@@ -16,19 +15,16 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* Services Section */}
           <div className={styles.services}>
-            {/* Better Mortgage */}
             <div className={styles.service}>
               <h3>
                 <span className={styles.betterText}>Better</span> Mortgage
               </h3>
               <p>
-                We can't wait to say "Welcome home." Apply 100% online, with expert customer support.
+                We can&apos;t wait to say &quot;Welcome home.&quot; Apply 100% online, with expert customer support.
               </p>
             </div>
 
-            {/* Better Real Estate */}
             <div className={styles.service}>
               <h3>
                 <span className={styles.betterText}>Better</span> Real Estate
@@ -38,7 +34,6 @@ const Footer: React.FC = () => {
               </p>
             </div>
 
-            {/* Better Cover */}
             <div className={styles.service}>
               <h3>
                 <span className={styles.betterText}>Better</span> Cover
@@ -48,7 +43,6 @@ const Footer: React.FC = () => {
               </p>
             </div>
 
-            {/* Better Inspect */}
             <div className={styles.service}>
               <h3>
                 <span className={styles.betterText}>Better</span> Inspect
@@ -58,7 +52,6 @@ const Footer: React.FC = () => {
               </p>
             </div>
 
-            {/* Better Settlement Services */}
             <div className={styles.service}>
               <h3>
                 <span className={styles.betterText}>Better</span> Settlement Services
@@ -69,9 +62,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Navigation Links */}
           <div className={styles.navigation}>
-            {/* Resources */}
             <div className={styles.navColumn}>
               <h4>Resources</h4>
               <ul>
@@ -89,7 +80,6 @@ const Footer: React.FC = () => {
               </ul>
             </div>
 
-            {/* Company */}
             <div className={styles.navColumn}>
               <h4>Company</h4>
               <ul>
@@ -103,7 +93,6 @@ const Footer: React.FC = () => {
               </ul>
             </div>
 
-            {/* Contact Us */}
             <div className={styles.navColumn}>
               <h4>Contact Us</h4>
               <ul>
@@ -114,7 +103,6 @@ const Footer: React.FC = () => {
               </ul>
             </div>
 
-            {/* Legal */}
             <div className={styles.navColumn}>
               <h4>Legal</h4>
               <ul>
@@ -129,7 +117,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Social Media Icons */}
         <div className={styles.socialMedia}>
           <a href="#" aria-label="Facebook">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -148,7 +135,6 @@ const Footer: React.FC = () => {
           </a>
         </div>
 
-        {/* Housing Icons */}
         <div className={styles.housingIcons}>
           <div className={styles.housingIcon}>
             <svg width="60" height="40" viewBox="0 0 60 40" fill="currentColor">
@@ -164,18 +150,17 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Legal Text */}
         <div className={styles.legalText}>
           <p>
-            <sup>1</sup>Better Mortgage's One Day Mortgage™ promotion offers qualified customers who provide certain required financial information/documentation to Better Mortgage within 4 hours of locking a rate on a mortgage loan the opportunity to receive an underwriting determination from Better Mortgage within 24 hours of their rate lock. The underwriting determination is subject to customary terms, including fraud and anti-money laundering checks, that take place pre-closing and which may trigger additional required documentation from the customer. Better Mortgage does not guarantee that initial underwriting approval will result in a final underwriting approval. See <a href="#">One Day Mortgage™ Terms and Conditions</a>.
+            <sup>1</sup>Better Mortgage&apos;s One Day Mortgage™ promotion offers qualified customers who provide certain required financial information/documentation to Better Mortgage within 4 hours of locking a rate on a mortgage loan the opportunity to receive an underwriting determination from Better Mortgage within 24 hours of their rate lock. The underwriting determination is subject to customary terms, including fraud and anti-money laundering checks, that take place pre-closing and which may trigger additional required documentation from the customer. Better Mortgage does not guarantee that initial underwriting approval will result in a final underwriting approval. See <a href="#">One Day Mortgage™ Terms and Conditions</a>.
           </p>
           
           <p>
-            <sup>2</sup>Better Mortgage's One Day HELOC™ promotion offers qualified customers who provide certain required financial information/documentation to Better Mortgage within 4 hours of locking a rate on a HELOC loan the opportunity to receive an underwriting determination from Better Mortgage within 24 hours of their rate lock. The underwriting determination is subject to customary terms, including fraud and anti-money laundering checks, that take place pre-closing and which may trigger additional required documentation from the customer. Better Mortgage does not guarantee that initial underwriting approval will result in final underwriting approval. See <a href="#">One Day HELOC™ Terms and Conditions</a>.
+            <sup>2</sup>Better Mortgage&apos;s One Day HELOC™ promotion offers qualified customers who provide certain required financial information/documentation to Better Mortgage within 4 hours of locking a rate on a HELOC loan the opportunity to receive an underwriting determination from Better Mortgage within 24 hours of their rate lock. The underwriting determination is subject to customary terms, including fraud and anti-money laundering checks, that take place pre-closing and which may trigger additional required documentation from the customer. Better Mortgage does not guarantee that initial underwriting approval will result in final underwriting approval. See <a href="#">One Day HELOC™ Terms and Conditions</a>.
           </p>
 
           <p>
-            <sup>3</sup>Assumes borrowers are eligible for the Automated Valuation Model (AVM) to calculate their home value, their loan amount is less than $400,000, all required documents are uploaded to their Better Mortgage online account within 24 hours of application, closing is scheduled for the earliest available date and time, and a notary is readily available. Funding timelines may vary and may be longer if an appraisal is required to calculate a borrower's home value.
+            <sup>3</sup>Assumes borrowers are eligible for the Automated Valuation Model (AVM) to calculate their home value, their loan amount is less than $400,000, all required documents are uploaded to their Better Mortgage online account within 24 hours of application, closing is scheduled for the earliest available date and time, and a notary is readily available. Funding timelines may vary and may be longer if an appraisal is required to calculate a borrower&apos;s home value.
           </p>
 
           <p>
@@ -191,7 +176,7 @@ const Footer: React.FC = () => {
           </p>
 
           <p>
-            Better Real Estate, LLC dba BRE, Better Home Services, BRE Services, LLC and Better Real Estate, and operating in the State of California through its wholly owned subsidiary Better Real Estate California Inc, is a licensed real estate brokerage and maintains its corporate headquarters at 325-41 Chestnut Street, Suite 826, Philadelphia, PA 19106. Here is a full listing of Better Real Estate, LLC's <a href="#">license numbers</a>. Better Real Estate, LLC provides access to real estate brokerage services via its nationwide network of partner brokerages and real estate agents ("Better Real Estate Partner Agent"). Equal Housing Opportunity. All rights reserved.
+            Better Real Estate, LLC dba BRE, Better Home Services, BRE Services, LLC and Better Real Estate, and operating in the State of California through its wholly owned subsidiary Better Real Estate California Inc, is a licensed real estate brokerage and maintains its corporate headquarters at 325-41 Chestnut Street, Suite 826, Philadelphia, PA 19106. Here is a full listing of Better Real Estate, LLC&apos;s <a href="#">license numbers</a>. Better Real Estate, LLC provides access to real estate brokerage services via its nationwide network of partner brokerages and real estate agents (&quot;Better Real Estate Partner Agent&quot;). Equal Housing Opportunity. All rights reserved.
           </p>
 
           <p>
@@ -215,7 +200,7 @@ const Footer: React.FC = () => {
           </p>
 
           <p>
-            Insurance quotes and policies are offered through Better Cover, LLC. A Pennsylvania Resident Producer Agency. License #881593. Here is a full listing of Better Cover, LLC's <a href="#">license numbers</a>.
+            Insurance quotes and policies are offered through Better Cover, LLC. A Pennsylvania Resident Producer Agency. License #881593. Here is a full listing of Better Cover, LLC&apos;s <a href="#">license numbers</a>.
           </p>
 
           <p>
