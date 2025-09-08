@@ -1,7 +1,15 @@
+'use client';
 import React from 'react';
 import styles from './Questions.module.scss';
 
 const Questions: React.FC = () => {
+
+  const navigate = (url: string) => {
+    window.location.href = url;
+  }
+  const handleClick = () => {
+    navigate('/calculator');
+  }
   return (
     <>
       <section className={styles.testimonial}>
@@ -65,7 +73,7 @@ const Questions: React.FC = () => {
               <button className={`${styles.tab} ${styles.active}`}>
                 Our products
               </button>
-              <button className={styles.tab}>
+              <button className={styles.tab} onClick={handleClick}>
                 Calculators
               </button>
               <button className={styles.tab}>

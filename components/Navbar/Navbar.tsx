@@ -5,6 +5,14 @@ import { useState, useEffect } from 'react'
 import React from 'react'
 
 const Navbar: React.FC = () => {
+
+  const navigate = (url: string) => {
+    window.location.href = url;
+  }
+
+  const handleClick = () => {
+    navigate('/');
+  }
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -33,7 +41,7 @@ const Navbar: React.FC = () => {
     <div className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.left_container}>
         <div className={styles.logo}>
-          <div className={styles.logo_text}>Better</div>
+          <div className={styles.logo_text} onClick={handleClick}>Better</div>
         </div>
         <div className={`${styles.action_container} ${isMenuOpen ? styles.active : ''}`}>
           <div className={styles.action}>

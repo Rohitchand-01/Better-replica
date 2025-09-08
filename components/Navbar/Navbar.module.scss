@@ -18,8 +18,10 @@
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 
     .left_container {
+      cursor: pointer;
       .logo .logo_text {
         color: #004733;
+        cursor: pointer;
       }
 
       .action_container .action .button {
