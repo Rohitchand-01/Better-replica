@@ -1,0 +1,272 @@
+// Footer.module.scss
+.footer {
+  background-color: #ffffff;
+  padding: 80px 0 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 80px;
+  margin-bottom: 60px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+// Company section
+.company {
+  .logo {
+    margin-bottom: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+.betterText {
+  color: #017848;
+  font-weight: 600;
+}
+
+// Services section
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.service {
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #333;
+  }
+
+  p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+  }
+}
+
+// Navigation section
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.navColumn {
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #333;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #017848;
+    }
+  }
+}
+
+// Social media section
+.socialMedia {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #e5e5e5;
+
+  a {
+    color: #666;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: #017848;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+// Housing icons section
+.housingIcons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.housingIcon {
+  svg {
+    opacity: 0.6;
+  }
+}
+
+// Legal text section
+.legalText {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 40px;
+
+  p {
+    margin: 0 0 16px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: #017848;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  sup {
+    font-size: 10px;
+    vertical-align: super;
+    color: #017848;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 30px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .content {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .services {
+    gap: 30px;
+  }
+
+  .service {
+    h3 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .socialMedia {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .legalText {
+    padding-top: 30px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .content {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .company .description {
+    font-size: 14px;
+  }
+
+  .services {
+    gap: 24px;
+  }
+
+  .navigation {
+    gap: 24px;
+  }
+
+  .navColumn h4 {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .socialMedia {
+    margin-bottom: 24px;
+  }
+
+  .housingIcons {
+    margin-bottom: 24px;
+    
+    .housingIcon svg {
+      width: 50px;
+      height: 35px;
+    }
+  }
+
+  .legalText {
+    padding-top: 24px;
+  }
+}

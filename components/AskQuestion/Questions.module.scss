@@ -1,0 +1,575 @@
+// Questions.module.scss
+
+// Testimonial Section
+.testimonial {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.testimonialContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @media (max-width: 1024px) {
+    gap: 60px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+}
+
+.testimonialCard {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #2c2c2c;
+  color: white;
+  padding: 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.testimonialImage {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 480px) {
+    height: 250px;
+  }
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #666 0%, #444 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.testimonialText {
+  padding: 32px;
+  position: relative;
+
+  @media (max-width: 480px) {
+    padding: 24px;
+  }
+}
+
+.quoteIcon {
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  font-family: Georgia, serif;
+
+  @media (max-width: 480px) {
+    font-size: 36px;
+    left: 24px;
+  }
+}
+
+.quote {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+.author {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-weight: 500;
+}
+
+.testimonialRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.testimonialTitle {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333;
+  margin: 0;
+
+  @media (max-width: 1024px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 32px;
+  }
+}
+
+.storiesButton {
+  padding: 16px 32px;
+  background-color: #017848;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #015a36;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 480px) {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+}
+
+.trustpilot {
+  display: flex;
+  align-items: center;
+}
+
+.trustpilotRating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.trustpilotStar {
+  color: #00b67a;
+  font-size: 16px;
+}
+
+.trustpilotBrand {
+  font-weight: 600;
+  color: #333;
+}
+
+.trustpilotText {
+  color: #666;
+}
+
+.trustpilotScore {
+  color: #666;
+}
+
+.testimonialNav {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+
+  @media (max-width: 480px) {
+    gap: 8px;
+  }
+}
+
+.navButton {
+  padding: 12px 24px;
+  border: 2px solid #e5e5e5;
+  border-radius: 24px;
+  background: white;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: #017848;
+    color: #017848;
+  }
+
+  &.active {
+    border-color: #017848;
+    background-color: #017848;
+    color: white;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+// Questions Section
+.questions {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+// Header Section
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.headerContent {
+  flex: 1;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #333;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
+}
+
+// Tabs Section
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 480px) {
+    flex-wrap: wrap;
+  }
+}
+
+.tab {
+  padding: 12px 24px;
+  border: 2px solid #e5e5e5;
+  border-radius: 24px;
+  background: white;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+
+  &:hover {
+    border-color: #017848;
+    color: #017848;
+  }
+
+  &.active {
+    border-color: #017848;
+    background-color: #017848;
+    color: white;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+// Grid Layout
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  grid-template-areas:
+    "ai ai ai ai ai ai mortgage mortgage mortgage mortgage mortgage mortgage"
+    "heloc heloc heloc heloc heloc heloc insurance insurance insurance insurance insurance insurance";
+
+  @media (max-width: 1024px) {
+    grid-template-areas:
+      "ai ai ai ai ai ai ai ai ai ai ai ai"
+      "mortgage mortgage mortgage mortgage mortgage mortgage mortgage mortgage mortgage mortgage mortgage mortgage"
+      "heloc heloc heloc heloc heloc heloc insurance insurance insurance insurance insurance insurance";
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "ai"
+      "mortgage"
+      "heloc"
+      "insurance";
+    gap: 20px;
+  }
+}
+
+// Card Styles
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  position: relative;
+  min-height: 300px;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+
+  &:first-child {
+    grid-area: ai;
+    flex-direction: column;
+  }
+
+  &:nth-child(2) {
+    grid-area: mortgage;
+    flex-direction: row;
+  }
+
+  &:nth-child(3) {
+    grid-area: heloc;
+    flex-direction: column;
+  }
+
+  &:nth-child(4) {
+    grid-area: insurance;
+    flex-direction: column;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column !important;
+    min-height: 250px;
+  }
+}
+
+.cardLarge {
+  min-height: 350px;
+
+  @media (max-width: 768px) {
+    min-height: 280px;
+  }
+}
+
+.cardMedium {
+  min-height: 300px;
+
+  @media (max-width: 768px) {
+    min-height: 250px;
+  }
+}
+
+.cardGreen {
+  background: linear-gradient(135deg, #e8f5f0 0%, #d4edda 100%);
+}
+
+// Card Content
+.cardContent {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+
+  @media (max-width: 480px) {
+    padding: 24px;
+  }
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #333;
+  margin: 0 0 16px 0;
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+
+  sup {
+    font-size: 14px;
+    color: #017848;
+  }
+}
+
+.cardDescription {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 0 24px 0;
+  flex-grow: 1;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+
+  sup {
+    font-size: 12px;
+    color: #017848;
+  }
+}
+
+.cardButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #e5e5e5;
+  background: white;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+  margin-top: auto;
+
+  &:hover {
+    border-color: #017848;
+    color: #017848;
+    transform: scale(1.05);
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// Card Images
+.cardImage {
+  flex: 1;
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    min-height: 150px;
+  }
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+// One Day Mortgage Branding
+.oneDayMortgageBrand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 32px;
+  color: #017848;
+
+  @media (max-width: 480px) {
+    gap: 12px;
+    padding: 24px;
+  }
+}
+
+.oneDayNumber {
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 1;
+
+  @media (max-width: 1024px) {
+    font-size: 80px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 60px;
+  }
+}
+
+.oneDayText {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 480px) {
+  .questions {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .grid {
+    gap: 16px;
+  }
+
+  .card {
+    min-height: 220px;
+  }
+
+  .cardLarge {
+    min-height: 250px;
+  }
+
+  .cardMedium {
+    min-height: 220px;
+  }
+}
