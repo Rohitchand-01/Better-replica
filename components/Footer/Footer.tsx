@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'; // Import the Link component
 import styles from './Footer.module.scss';
 
 const Footer: React.FC = () => {
@@ -66,8 +67,10 @@ const Footer: React.FC = () => {
             <div className={styles.navColumn}>
               <h4>Resources</h4>
               <ul>
-                <li><a href="#">Home affordability calculator</a></li>
-                <li><a href="#">Mortgage calculator</a></li>
+                {/* Corrected Links */}
+                <li><Link href="/">Home affordability calculator</Link></li>
+                <li><Link href="/calculator">Mortgage calculator</Link></li>
+                {/* The rest are placeholder or external links, so they can remain as <a> tags */}
                 <li><a href="#">Free mortgage calculator</a></li>
                 <li><a href="#">Mortgage calculator with taxes</a></li>
                 <li><a href="#">Mortgage calculator with PMI</a></li>
@@ -83,7 +86,8 @@ const Footer: React.FC = () => {
             <div className={styles.navColumn}>
               <h4>Company</h4>
               <ul>
-                <li><a href="#">About Us</a></li>
+                {/* Corrected Link */}
+                <li><Link href="/about">About Us</Link></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Media</a></li>
                 <li><a href="#">Partner With Us</a></li>
@@ -96,6 +100,7 @@ const Footer: React.FC = () => {
             <div className={styles.navColumn}>
               <h4>Contact Us</h4>
               <ul>
+                {/* External links like mailto and tel are fine as <a> tags */}
                 <li><a href="mailto:hello@better.com">hello@better.com</a></li>
                 <li><a href="tel:415-523-8837">415-523-8837</a></li>
                 <li><a href="#">FAQ</a></li>

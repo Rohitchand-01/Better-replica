@@ -1,13 +1,21 @@
+'use client'
 import React from 'react'
 import styles from './page.module.scss'
 import { House } from 'lucide-react'
 
 const Page: React.FC = () => {
+  const navigate = (url: string) => {
+    window.location.href  = url
+  }
+
+  const handleClick = (url: string) => {
+    navigate(url)
+  }
   return (
     <div className={styles.container}>
       {/* Header */}
       <header className={styles.header}>
-        <div className={styles.logo}>
+        <div className={styles.logo} onClick={() => handleClick('/')}>
           <span className={styles.logoText}>Better</span>
           <span className={styles.logoSubtext}>Mortgage</span>
         </div>

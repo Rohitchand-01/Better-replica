@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import styles from './Calculator.module.scss';
+import styles from '../Calculator/Calculator.module.scss';
 
 const Calculator: React.FC = () => {
   const [homePrice, setHomePrice] = useState(300000);
@@ -15,7 +15,6 @@ const Calculator: React.FC = () => {
   const [utilities, setUtilities] = useState('$0/mo');
   const [monthlyPayment, setMonthlyPayment] = useState(1517);
 
-  // Calculate monthly payment
   useEffect(() => {
     const principal = homePrice - downPayment;
     const monthlyRate = interestRate / 100 / 12;
@@ -312,12 +311,12 @@ const Calculator: React.FC = () => {
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>1</div>
               <h3>Share a few details</h3>
-              <p>Share your info. Get verified answers and forms gets—all kept as safe as a blanket and you'll find out your next move</p>
+              <p>Share your info. Get verified answers and forms gets—all kept as safe as a blanket and you&apos;ll find out your next move</p>
             </div>
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>2</div>
               <h3>See your homebuying budget</h3>
-              <p>See your pre-approved rate in minutes—free just see with no pre-approved rate do you know don't wait long any long</p>
+              <p>See your pre-approved rate in minutes—free just see with no pre-approved rate do you know don&apos;t wait long any long</p>
             </div>
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>3</div>
@@ -346,9 +345,9 @@ const Calculator: React.FC = () => {
           <h2>Mortgage Calculator with PMI & Taxes</h2>
           <div className={styles.infoContent}>
             <p>A mortgage calculator like ours will give you a clear picture that monthly housing costs making you commit to a home loan.</p>
-            <p>Please note that with optional adjustments and property taxes and insurance, you'll get a clearer picture of your total monthly payment.</p>
-            <p>A mortgage payment calculator does these usually come together to help a home's monthly payment.</p>
-            <p>Thank built into the calculator are mortgage loan formulas "all our future interest you by taking this loan." to track how much extra might be calculated, and a different period. A different amount of home monthly interest. Once you decided not just each it the loan size. As you calculate the monthly interest, a loan gets you a more specific loan or monthly for to talk.</p>
+            <p>Please note that with optional adjustments and property taxes and insurance, you&apos;ll get a clearer picture of your total monthly payment.</p>
+            <p>A mortgage payment calculator does these usually come together to help a home&apos;s monthly payment.</p>
+            <p>Thank built into the calculator are mortgage loan formulas &ldquo;all our future interest you by taking this loan.&rdquo; to track how much extra might be calculated, and a different period. A different amount of home monthly interest. Once you decided not just each it the loan size. As you calculate the monthly interest, a loan gets you a more specific loan or monthly for to talk.</p>
           </div>
 
           <div className={styles.faqSection}>
